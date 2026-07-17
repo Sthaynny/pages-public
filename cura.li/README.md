@@ -1,14 +1,19 @@
 # Cura.li — páginas públicas
 
-Espelho publicado do site legal (privacidade / termos).
+Site HTTPS do produto: landing + documentos legais.
 
-Fonte canônica (Markdown): repositório privado `Cura.li` → `docs/legal/`.  
-HTML de origem no app: `Cura.li/pages/`.
+| Página | Caminho | URL |
+| :--- | :--- | :--- |
+| Landing | `index.html` | `https://sthaynny.github.io/pages-public/cura.li/` |
+| Privacidade | `privacidade/` | `https://sthaynny.github.io/pages-public/cura.li/privacidade/` |
+| Termos | `termos/` | `https://sthaynny.github.io/pages-public/cura.li/termos/` |
 
-| Documento | URL publicada |
+## Fontes
+
+| Tipo | Origem (repo Cura.li) |
 | :--- | :--- |
-| Índice | `https://sthaynny.github.io/public/cura.li/` |
-| Privacidade | `https://sthaynny.github.io/public/cura.li/privacidade/` |
-| Termos | `https://sthaynny.github.io/public/cura.li/termos/` |
+| Copy / listing | `docs/store/LISTING_PT_BR.md` |
+| Legal MD | `docs/legal/*.md` |
+| Tom publicitário | skill `.cursor/skills/publicidade/` |
 
-Constantes no app: `AppLegalConstants.privacyPolicyUrl` e `termsOfUseUrl` — apontar para estas URLs.
+Constantes no app: `AppLegalConstants.privacyPolicyUrl` e `termsOfUseUrl` — usar as URLs deste repo.

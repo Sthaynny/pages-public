@@ -1,0 +1,56 @@
+---
+description: Overview do repo pages-public — hosting HTTPS, estrutura multi-app e regras de conteúdo.
+alwaysApply: true
+---
+
+# pages-public — Overview
+
+## Propósito
+
+Repositório **público** que publica sites estáticos via GitHub Pages. Serve URLs HTTPS exigidas pelas lojas enquanto os apps (ex.: Cura.li) podem permanecer em repos privados.
+
+Base: `https://sthaynny.github.io/pages-public/`
+
+## Produto Cura.li (contexto)
+
+App Flutter de **organização de medicamentos e lembretes** para cuidadores. Pilares: offline-first, acessibilidade WCAG 2.1 AA, Free + Cura.li+ (dois apps na loja).
+
+| Conteúdo | Origem canônica (repo privado) | Publicado aqui |
+| :--- | :--- | :--- |
+| Listing / copy de loja | `Cura.li/docs/store/` | Landing `cura.li/` |
+| Legal (MD) | `Cura.li/docs/legal/` | `cura.li/privacidade/`, `cura.li/termos/` |
+| Publicidade | skill `publicidade` no Cura.li | Tom e benefícios na landing |
+
+## Estrutura
+
+```
+/
+├── index.html                 # Índice de apps
+├── assets/site.css
+├── cura.li/                   # Site do Cura.li
+│   ├── index.html             # Landing
+│   ├── assets/landing.css
+│   ├── assets/legal.css
+│   ├── privacidade/
+│   └── termos/
+└── .github/workflows/pages.yml
+```
+
+Novo app = pasta na raiz + link em `/index.html`. O workflow copia pastas de app para o artifact (ignora `.git` / `.github`).
+
+## URLs Cura.li
+
+- Landing: `/cura.li/`
+- Privacidade: `/cura.li/privacidade/`
+- Termos: `/cura.li/termos/`
+
+## Regras de conteúdo
+
+- HTML/CSS estático apenas — sem secrets, analytics invasivo ou backend.
+- Copy alinhada a `docs/store/LISTING_PT_BR.md` e disclaimer médico.
+- Mudança legal: atualizar MD no Cura.li **e** o HTML espelhado aqui.
+- A11y web: `lang`, skip link, foco visível, alvos ≥ 44px, `prefers-reduced-motion`, contraste AA.
+
+## Deploy
+
+Push em `main` → workflow **Pages**. Settings → Pages → source = GitHub Actions.

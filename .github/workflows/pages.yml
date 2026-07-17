@@ -35,7 +35,7 @@ jobs:
           for d in */; do
             name="${d%/}"
             case "$name" in
-              .git|.github|_site|assets) ;;
+              .git|.github|.cursor|_site|assets) ;;
               *) cp -r "$name" _site/ ;;
             esac
           done

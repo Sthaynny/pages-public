@@ -3,47 +3,136 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Documentos legais do Cura.li — política de privacidade e termos de uso." />
-  <title>Cura.li — Documentos legais</title>
-  <link rel="stylesheet" href="assets/legal.css" />
+  <meta name="description" content="Cura.li — lembretes de doses acessíveis para cuidadores. Offline, claro e seguro." />
+  <meta name="theme-color" content="#2E7D32" />
+  <title>Cura.li — Lembretes de doses para cuidadores</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,550;9..144,700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/landing.css" />
 </head>
 <body>
-  <header>
-    <a class="brand" href="./">Cura.<span>li</span></a>
-    <nav aria-label="Documentos">
-      <a href="privacidade/">Política de privacidade</a>
-      <a href="termos/">Termos de uso</a>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header">
+    <a class="brand" href="./" aria-current="page">Cura.<span>li</span></a>
+    <nav aria-label="Principal">
+      <a href="#recursos">Recursos</a>
+      <a href="#planos">Planos</a>
+      <a href="privacidade/">Privacidade</a>
+      <a href="termos/">Termos</a>
     </nav>
   </header>
 
-  <main>
-    <h1>Documentos legais</h1>
-    <p class="meta">
-      Páginas públicas exigidas pelas lojas (Google Play e App Store).
-      Aplicam-se ao <strong>Cura.li</strong> (gratuito) e ao <strong>Cura.li+</strong> (pago).
-    </p>
+  <main id="conteudo">
+    <section class="hero" aria-labelledby="hero-brand">
+      <div class="hero-copy">
+        <p id="hero-brand" class="hero-brand">Cura.<span>li</span></p>
+        <h1>Lembretes de doses claros, no seu aparelho</h1>
+        <p class="hero-lead">
+          Organize remédios e horários para quem você cuida — sem conta e sem nuvem.
+          Feito para cuidadores, com acessibilidade de verdade.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="mailto:igorsthaynny@gmail.com?subject=%5BCura.li%5D%20Quero%20saber%20mais">Falar com suporte</a>
+          <a class="btn btn-ghost" href="#recursos">Ver o que o app faz</a>
+        </div>
+        <p class="hero-note">Em breve na Google Play e na App Store · Cura.li (grátis) e Cura.li+</p>
+      </div>
 
-    <div class="card">
-      <ul class="links">
+      <div class="hero-visual" aria-hidden="true">
+        <div class="phone">
+          <div class="phone-notch"></div>
+          <p class="phone-app">Cura.li</p>
+          <p class="phone-time">08:00</p>
+          <ul class="phone-doses">
+            <li><span class="dot pending"></span> Losartana · pendente</li>
+            <li><span class="dot taken"></span> Vitamina D · tomada</li>
+            <li><span class="dot late"></span> Omeprazol · atrasada</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="recursos" class="section" aria-labelledby="recursos-title">
+      <h2 id="recursos-title">O que você pode fazer</h2>
+      <p class="section-lead">Cadastro, lembretes locais e acompanhamento do dia — com contraste adequado e suporte a leitores de tela.</p>
+      <ul class="feature-list">
         <li>
-          <a href="privacidade/">Política de privacidade</a>
-          <p>Como tratamos dados de medicação no aparelho e o que não coletamos.</p>
+          <strong>Medicamentos com dosagem adulto e infantil</strong>
+          <span>Cadastro claro para não misturar horários nem doses.</span>
         </li>
         <li>
-          <a href="termos/">Termos de uso</a>
-          <p>O que o app é e não é; responsabilidade do cuidador; planos Free e Cura.li+.</p>
+          <strong>Agendar doses e receber lembretes no aparelho</strong>
+          <span>Notificações locais — funcionam offline, sem depender da nuvem.</span>
+        </li>
+        <li>
+          <strong>Marcar tomadas e acompanhar o dia</strong>
+          <span>Pendentes, tomadas e atrasadas em uma visão objetiva.</span>
+        </li>
+        <li>
+          <strong>Acessibilidade WCAG 2.1 AA</strong>
+          <span>Texto escalável, tema claro/escuro e semântica para TalkBack e VoiceOver.</span>
         </li>
       </ul>
-    </div>
+    </section>
 
-    <p>
-      Contato:
-      <a href="mailto:igorsthaynny@gmail.com">igorsthaynny@gmail.com</a>
-    </p>
+    <section class="section section-trust" aria-labelledby="trust-title">
+      <h2 id="trust-title">Dados no seu aparelho</h2>
+      <p class="section-lead">
+        Medicamentos e agendamentos ficam no dispositivo. Sem anúncios, sem compra dentro do app no MVP.
+        Privacidade e termos públicos para as lojas.
+      </p>
+      <p class="trust-links">
+        <a href="privacidade/">Política de privacidade</a>
+        <a href="termos/">Termos de uso</a>
+      </p>
+    </section>
+
+    <section id="planos" class="section" aria-labelledby="planos-title">
+      <h2 id="planos-title">Cura.li e Cura.li+</h2>
+      <p class="section-lead">Dois apps na loja: o gratuito com limites claros e a edição completa paga.</p>
+      <div class="plans" role="list">
+        <article class="plan" role="listitem">
+          <h3>Cura.li</h3>
+          <p class="plan-price">Grátis</p>
+          <ul>
+            <li>Até 3 medicamentos</li>
+            <li>Até 5 doses futuras</li>
+            <li>1 pessoa cuidada</li>
+            <li>Histórico dos últimos 7 dias</li>
+          </ul>
+        </article>
+        <article class="plan plan-plus" role="listitem">
+          <h3>Cura.li+</h3>
+          <p class="plan-price">Pago na loja</p>
+          <ul>
+            <li>Medicamentos e doses ilimitados</li>
+            <li>Até 5 pessoas cuidadas</li>
+            <li>Histórico completo + exportação PDF/CSV</li>
+            <li>Relatório de adesão e backup local</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <aside class="disclaimer" aria-labelledby="disclaimer-title">
+      <h2 id="disclaimer-title">Aviso importante</h2>
+      <p>
+        O Cura.li não substitui orientação, diagnóstico ou tratamento médico.
+        Em dúvida sobre dosagem ou sintomas, consulte um profissional de saúde.
+      </p>
+    </aside>
   </main>
 
-  <footer>
-    <p>Cura.li — organização de medicamentos e lembretes para cuidadores.</p>
+  <footer class="site-footer">
+    <p class="footer-brand">Cura.<span>li</span></p>
+    <p>Organização de medicamentos e lembretes para cuidadores.</p>
+    <nav aria-label="Rodapé">
+      <a href="privacidade/">Privacidade</a>
+      <a href="termos/">Termos</a>
+      <a href="mailto:igorsthaynny@gmail.com">igorsthaynny@gmail.com</a>
+    </nav>
   </footer>
 </body>
 </html>

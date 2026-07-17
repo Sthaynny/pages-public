@@ -2,7 +2,7 @@
   color-scheme: light dark;
   --bg: #f4f6f5;
   --fg: #1a2420;
-  --muted: #5a6b62;
+  --muted: #4a5c54;
   --accent: #1b6b4a;
   --border: #d0dbd4;
   --card: #ffffff;
@@ -32,6 +32,29 @@ body {
   background:
     radial-gradient(ellipse 80% 50% at 10% -10%, color-mix(in srgb, var(--accent) 18%, transparent), transparent),
     var(--bg);
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -100px;
+  z-index: 100;
+  padding: 0.65rem 1rem;
+  background: var(--card);
+  color: var(--fg);
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  border: 2px solid #1565c0;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+a:focus-visible {
+  outline: 3px solid #1565c0;
+  outline-offset: 3px;
 }
 
 header,
