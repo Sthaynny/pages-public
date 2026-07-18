@@ -459,25 +459,22 @@ button:focus-visible {
   min-height: 48px;
   padding: 0.75rem 1.35rem;
   border-radius: 10px;
+  border: 2px solid transparent;
   font-family: var(--font-body);
   font-weight: 700;
   font-size: 0.98rem;
   text-decoration: none;
-  transition: transform 0.2s var(--ease-out), background 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-.btn:hover {
-  transform: translateY(-2px);
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .btn:active {
-  transform: translateY(0);
+  box-shadow: none;
 }
 
 .btn-primary {
   background: #eef2ff;
   color: var(--accent-deep);
-  border: 2px solid transparent;
+  border-color: transparent;
   box-shadow: 0 8px 24px color-mix(in srgb, #000 18%, transparent);
 }
 
@@ -488,7 +485,7 @@ button:focus-visible {
 .btn-ghost {
   background: transparent;
   color: #eef2ff;
-  border: 2px solid color-mix(in srgb, #fff 40%, transparent);
+  border-color: color-mix(in srgb, #fff 40%, transparent);
 }
 
 .btn-ghost:hover {
@@ -506,11 +503,14 @@ button:focus-visible {
 .section-contact .btn-primary {
   background: var(--accent);
   color: #fff;
+  border-color: var(--accent);
+  box-shadow: none;
 }
 
 .btn-on-light.btn-primary:hover,
 .section-contact .btn-primary:hover {
   background: var(--accent-deep);
+  border-color: var(--accent-deep);
   color: #fff;
 }
 
@@ -813,11 +813,12 @@ button:focus-visible {
   text-decoration: none;
   color: inherit;
   border-bottom: 1px solid var(--line);
-  transition: color 0.2s ease, padding-left 0.2s var(--ease-out);
+  transition: color 0.2s ease, background 0.2s ease;
 }
 
-.project-list a:hover {
-  padding-left: 0.35rem;
+.project-list a:hover,
+.project-list a:focus-visible {
+  background: color-mix(in srgb, var(--accent) 6%, transparent);
 }
 
 .project-list a:hover strong,
@@ -989,6 +990,7 @@ button:focus-visible {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
+  align-items: center;
 }
 
 /* Footer */
@@ -1117,7 +1119,6 @@ button:focus-visible {
   .featured-list a:hover,
   .project-list a:hover {
     transform: none;
-    padding-left: 0;
   }
 }
 
