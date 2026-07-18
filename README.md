@@ -12,7 +12,9 @@ GitHub Pages (plano free) **não** publica repos privados — este repo desbloqu
 ├── assets/site.css
 ├── igor/                   # Landing pessoal — Igor Sthaynny
 │   ├── index.html
-│   └── assets/landing.css
+│   ├── assets/landing.css
+│   └── projetos/           # Listagem de projetos públicos
+│       └── index.html
 ├── cura.li/                # Landing + legal do Cura.li
 │   ├── index.html          # Landing (store / publicidade)
 │   ├── assets/landing.css
@@ -31,6 +33,7 @@ Cada app = uma pasta na raiz. Ao adicionar outro app, copie o HTML para `nome-do
 | :--- | :--- |
 | Índice | `https://sthaynny.github.io/pages-public/` |
 | Igor Sthaynny | `https://sthaynny.github.io/pages-public/igor/` |
+| Projetos Igor | `https://sthaynny.github.io/pages-public/igor/projetos/` |
 | Landing Cura.li | `https://sthaynny.github.io/pages-public/cura.li/` |
 | Privacidade | `https://sthaynny.github.io/pages-public/cura.li/privacidade/` |
 | Termos | `https://sthaynny.github.io/pages-public/cura.li/termos/` |
