@@ -535,6 +535,91 @@ button:focus-visible {
 .skill-flow li:nth-child(10) { animation-delay: 0.29s; }
 .skill-flow li:nth-child(n + 11) { animation-delay: 0.32s; }
 
+/* Projects */
+
+.section-projects {
+  border-top: 1px solid var(--line);
+}
+
+.section-projects .subhead {
+  margin-top: 2rem;
+}
+
+.section-projects .subhead:first-of-type {
+  margin-top: 0;
+}
+
+.project-list {
+  list-style: none;
+  margin: 0 0 0.5rem;
+  padding: 0;
+  display: grid;
+  gap: 0;
+}
+
+.project-list a {
+  display: block;
+  padding: 1rem 0;
+  min-height: 44px;
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px solid var(--line);
+  transition: color 0.2s ease, padding-left 0.2s var(--ease-out);
+}
+
+.project-list a:hover {
+  padding-left: 0.35rem;
+}
+
+.project-list a:hover strong {
+  color: var(--accent-deep);
+}
+
+.project-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.35rem 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.project-list strong {
+  font-size: 1.05rem;
+  color: var(--ink);
+  transition: color 0.2s ease;
+}
+
+.project-meta {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--copper);
+}
+
+.project-desc {
+  display: block;
+  color: var(--muted);
+  font-size: 0.98rem;
+  max-width: 42rem;
+}
+
+.projects-more {
+  margin: 2rem 0 0;
+}
+
+.projects-github {
+  color: var(--ink-soft) !important;
+  border-color: color-mix(in srgb, var(--ink) 22%, transparent) !important;
+}
+
+.projects-github:hover {
+  border-color: var(--accent) !important;
+  color: var(--accent-deep) !important;
+  background: color-mix(in srgb, var(--accent) 8%, transparent) !important;
+}
+
 /* Experience */
 
 .section-exp {
